@@ -1,16 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <OutputType>Exe</OutputType>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GeneratorLib\GeneratorLib.csproj" />
   </ItemGroup>
-  
+
+  <ItemGroup>
+    <PackageReference Include="System.CodeDom" Version="6.0.0-preview.5.21301.5" />
+    <PackageReference Include="System.Security.Permissions" Version="6.0.0-preview.5.21301.5" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec WorkingDirectory="$(OutputPath)" Command="Generator.exe" />
+    <Exec WorkingDirectory="$(OutputPath)" Command="dotnet Generator.dll" />
   </Target>
+
 
 </Project>

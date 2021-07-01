@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <IsPackable>false</IsPackable>
     <RootNamespace>Fivan.Game.OccupationalShield.GameLogic.Tests</RootNamespace>
     <Platforms>AnyCPU;x86;x64</Platforms>
@@ -13,8 +13,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />    
-    <packagereference Include="NUnit3TestAdapter" Version="3.8.0"></packagereference>
-    <packagereference Include="NUnit" Version="3.8.1"></packagereference>
+    <PackageReference Include="NUnit3TestAdapter" Version="3.8.0"/>
+    <PackageReference Include="NUnit" Version="3.8.1"/>
   </ItemGroup>
 
   <ItemGroup>

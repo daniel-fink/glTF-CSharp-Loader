@@ -10,7 +10,11 @@ namespace glTFLoaderUnitTests
     [TestFixture]
     public class SampleModelsTest
     {
-        private const string RelativePathToSchemaDir = @"..\..\..\..\..\glTF-Sample-Models\2.0\";
+        //private const string RelativePathToSchemaDir = @"..\..\..\..\..\glTF-Sample-Models\2.0\";
+        private static DirectoryInfo currentPath = new DirectoryInfo(Environment.CurrentDirectory);
+        private static DirectoryInfo projectPath = currentPath.Parent.Parent.Parent.Parent;
+        private string RelativePathToSchemaDir = Path.Combine(projectPath.FullName, "glTF", "specification", "2.0", "schema") + Path.DirectorySeparatorChar;
+
         private string AbsolutePathToSchemaDir;
 
         [SetUp]

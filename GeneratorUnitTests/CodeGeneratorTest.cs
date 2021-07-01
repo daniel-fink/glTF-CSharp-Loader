@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using GeneratorLib;
 using NUnit.Framework;
 
@@ -7,7 +8,11 @@ namespace GeneratorUnitTests
     [TestFixture]
     public class CodeGeneratorTest
     {
-        private const string RelativePathToSchemaDir = @"..\..\..\..\..\glTF\specification\2.0\schema\";
+        //private const string RelativePathToSchemaDir = @"..\..\..\..\..\glTF\specification\2.0\schema\";
+        private static DirectoryInfo currentPath = new DirectoryInfo(Environment.CurrentDirectory);
+        private static DirectoryInfo projectPath = currentPath.Parent.Parent.Parent.Parent;
+        private string RelativePathToSchemaDir = Path.Combine(projectPath.FullName, "glTF", "specification", "2.0", "schema") + Path.DirectorySeparatorChar;
+
         private string AbsolutePathToSchemaDir;
 
         [SetUp]
