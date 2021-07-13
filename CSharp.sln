@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "glTFLoader", "glTFLoader\gl
 		{DDD005C7-D63D-4707-9464-1BCB9FD00454} = {DDD005C7-D63D-4707-9464-1BCB9FD00454}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "glTFLoaderUnitTests", "glTFLoaderUnitTests\glTFLoaderUnitTests.csproj", "{55C01A0A-61C6-478C-9AAC-874709AEA393}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "glTFLoaderUnitTests", "glTFLoaderUnitTests\glTFLoaderUnitTests.csproj", "{D4D24549-56AB-495F-BEA1-11C29886DD50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +42,10 @@ Global
 		{55C01A0A-61C6-478C-9AAC-874709AEA393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55C01A0A-61C6-478C-9AAC-874709AEA393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55C01A0A-61C6-478C-9AAC-874709AEA393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D24549-56AB-495F-BEA1-11C29886DD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D24549-56AB-495F-BEA1-11C29886DD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D24549-56AB-495F-BEA1-11C29886DD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D24549-56AB-495F-BEA1-11C29886DD50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
